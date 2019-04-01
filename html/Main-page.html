@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Header -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="NoraJoelleBUssert">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NoJoBu Portfolio</title>
+    <meta name="description">
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!--<link href="../css/bootstrap.min.css" rel="stylesheet">-->
+
+     <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Styles for two rows -->
+    <link href="../css/2-col-portfolio.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="../css/freelancer.css" rel="stylesheet" media="screen">
+    <link href="../css/nojobu-site.css" rel="stylesheet" type="text/css">
+
+    
+   <!-- Custom Fonts -->
+  <link href="../fontawesome-free-5.8.1-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 
+<link href="//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold" rel="stylesheet" type="text/css">
+   
+   
+ 
+</head>
+<body>
+    
+    
+ <header></header>
+
+<!-- NAVIGATIONs --> 
+<!-- Responsive Toggle Navigation BURGER -->  
+<div class="toggle" id="js-navbar-toggle">
+     <span class="lines">
+      <span class="line-layer"></span>
+      <span class="line-layer"></span>
+      <span class="line-layer"></span>
+    </span>
+     </div> 
+     
+<div class="toggle-menu" id="js-toggle-menu">
+    <ul class="main-toggle-menu">
+        <li class="main-toggle-menu-link"><a href="#topsection" class="nav-links-toggle">HOME</a></li>
+        <li class="main-toggle-menu-link"><a href="#aboutsection" class="nav-links-toggle" >ABOUT</a></li>
+        <li class="main-toggle-menu-link"><a href="#portfoliosection" class="nav-links-toggle" >PORTFOLIO</a></li>
+        <li class="main-toggle-menu-link"><a href="#contactsection" class="nav-links-toggle" >CONTACT</a></li>
+       <li> 
+     <ul class="social">
+    <li><a href="https://www.linkedIn.com/"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://www.instagram.com/nojobu/"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://dribbble.com/nojobu"><i class="fab fa-dribbble"></i></a></li>
+         <li><a href="https://vimeo.com/nojobu"><i class="fab fa-vimeo"></i></a></li>
+</ul>
+      </li>  
+    </ul>
+     </div> 
+     
+  <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+    <script type="text/javascript">
+            let mainNav = document.getElementById('js-toggle-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+            navBarToggle.addEventListener('click', function () {
+                mainNav.classList.toggle('active');
+                navBarToggle.classList.toggle('toggle-active');
+            });
+        
+            mainNav.addEventListener('click', function () {
+                mainNav.classList.toggle('active');
+                navBarToggle.classList.toggle('toggle-active');
+            });
+        </script>
+    
+
+<!-- Regular Navigation -->
+    <nav id="test" class="navbar navbar-expand-lg fixed-top sticky-navi">
+      <div class="container">
+       <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+<div class="collapse navbar-collapse" id="navbarResponsive">
+--><div class="nav-container">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                
+              <a class="nav-link" href="#topsection"><span class="page-scroll">
+                        
+                  
+<img src="../imgs/NoJoBu-logo.png"
+onmouseover="this.src='../imgs/NoJoBu-logo_black.png'"
+onmouseout="this.src='../imgs/NoJoBu-logo.png'"
+border="0" width="30%" height="30%" alt="logo"/>
+  
+
+                </span></a>
+            </li>
+            <li class="nav-item">
+               <div class="navbar-fixed">
+                <div class="center-middle-left">
+                    <h6 class="font_6"> 
+                        <span id="about" >
+                            <a class="nav-link" href="#aboutsection" target="_self">     <span class="page-scroll nav-font" style="color:#000000">ABOUT</span>                             
+                            </a> 
+                        </span>
+                    </h6>
+            </div>
+        </div>
+            </li>
+            <li class="nav-item">
+              <div>
+    <h6 class="font_6"> 
+                <span id="contact" >
+                    <a class="nav-link" href="#contactsection" target="_self">
+                        <span class="page-scroll nav-font" style="color:#000000">CONTACT</span>                             
+                    </a> 
+                </span>
+            </h6>
+    </div>
+            </li>
+            <li class="nav-item">
+              <div class="center-bottom">  
+    <h6 class="font_6">
+       <span id="portfolios" >
+        <a href="#portfoliosection" target="_self">
+                        <span class="page-scroll nav-font" style="color:#000000">PORTFOLIO</span>                    
+               </a>
+           </span>
+            </h6>    
+    </div> 
+            </li>
+          </ul>
+          </div>
+      </div>
+    </nav>
+     
+     
+     
+     
+     
+<!-- HOME -->                    
+<section class="success" id="topsection">
+    <div class="container">
+        <div class="row">
+        
+            <div id="page-top" class="index">
+    
+      <!-- SKETCH -->
+    <script src="../p5/p5.min.js"></script>
+    <script src="../p5/addons/p5.dom.min.js"></script>
+    <script src="../p5/addons/p5.sound.min.js"></script>
+    <script src="../p5/my-name-is-nora/sketch.js"></script>
+
+    
+            
+        <div id="startpage-text" class="show d-md-block">
+              <h3 class="helloNora">HELLO.</h3>
+              <p>I am Nora Joëlle.</p>
+        </div>        
+</div>
+               
+        </div>
+    </div>
+    </section>
+    
+          
+
+   <!-- Extra space for fancy navi -->   
+<div class="container extra-space">        
+             
+             
+                        
+<!-- Portfolio Section -->           
+<section class="success" id="portfoliosection">
+    <h1 class="my-4 pt-5 pt-5">PORTFOLIO</h1>
+    
+    <div class="container">
+        <div class="row">
+            <p class="pt-5 pb-5"> Here are my projects I worked on so far: </p>
+            <br>
+            <div> 
+                <ul class="portfolio-list" style="list-style: none;">
+                <li>
+                    
+                       
+                            <a href="../html/pf-Eatly.html" target="_self">     <h6 class="font_6"> Eatly App  </h6>                             
+                            </a> 
+                        
+                   
+                </li>
+                
+                <li>
+                    
+                       
+                            <a class="" href="../html/pf-AR-Gastro-App.html" target="_self"> <h6 class="font_6">  AR-Application in the Field of Gastronomy </h6>                             
+                            </a> 
+                        
+                   
+                </li>
+                    
+                    <li>
+                   
+                        
+                            <a class="" href="../html/pf-AR-Gastro-App.html" target="_self"> <h6 class="font_6">UX Enhancements at Tipico</h6>       
+                            </a> 
+                       
+                    
+                </li>
+                    
+                    <li>
+                   
+                       
+                            <a class="" href="../html/pf-Workshop-CPE.html" target="_self"> <h6> UI/UX Worshop at CPE Lyon</h6>                                               
+                            </a> 
+                       
+                    
+                </li>
+                </ul>
+            
+            </div>
+            
+          
+               
+        </div>
+    </div>
+    </section>
+        
+    
+                                            
+        
+  
+
+<!-- About Section -->
+<section class="success" id="aboutsection">
+    <div class="container">
+        
+        <div class="row">
+            <div class="p-5 col-lg-12 text-center">
+                <h2 class="pt-5 pb-5">Hi I am Nora</h2>
+            </div>
+        </div>
+        
+        
+        
+        <div class="row centerVertAndHor">
+        <div class="col-lg-5 col-md-6 col-xs-2">
+             
+              
+           <img src="../imgs/nora.jpg" class="img-responsive noraImg round-img " alt="Responsive image" >
+            <!-- vorher war img direkt anstatt round-img  -->
+                <div class="col-lg-12 m-4 "></div>
+                
+            
+        </div>
+           
+            
+            <div class="col-md-6">
+            <div class="innerContent">
+          <p>
+            I’m a <strong>masters student</strong> in media and computing, with a big heart for <strong> design in therms of interactive motion design and UI/UX solutions </strong> through strategy, prototyping and research.
+          </p>
+          
+        </div>
+        
+         </div>       
+          </div>         
+        </div>
+        
+        <!-- TIMELINE-->
+        <div class="row">
+          <div class="col-lg-12">
+         <div class="buffer">
+            <ul class="timeline">
+               <!-- </br></br></br></br></br></br></br>-->
+              <li>
+                <div class="timeline-container left">
+                  <div class="timeline-heading">
+                    <h4>August 2018 - March 2019</h4>
+                    <h4 class="timeline-subheading">Erasmus Semester in France</h4>
+                  </div>
+                  <div class="timeline-content">
+                    <p>Erasmus semester at Chemistry and Chemical Engineering School (CPE) in Lyon, France. During the 7 months stay, I gained a basic knowledge of French (B1),  I developt especially skills in React, NodeJS, jQuery.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-container right">
+                  <div class="timeline-heading">
+                    <h4>April 2017</h4>
+                    <h4 class="timeline-subheading">MEDIA AND COMPUTING (M. SC.)</h4>
+                  </div>
+                  <div class="timeline-content">
+                      <p>Start of my master studies in <i>Media and Computing (Medieninformatik)</i> at Beuth Hochschule für Technik Berlin, Germany.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-container left">
+                  <div class="timeline-heading">
+                    <h4>June 2017</h4>
+                    <h4 class="timeline-subheading">Computer science day at the HTW Berlin</h4>
+                  </div>
+                  <div class="timeline-content">
+                    <p>As part of the computer science day at the Hochschule für Wirtschaft und Technik (HTW) in Berlin, I had the chance to present my bachelor thesis <i>Explaining Bitcoin with a Stop Motion Animation</i>.</p>
+                  </div>
+                </div>
+              </li>
+<li class="timeline-inverted">
+                <div class="timeline-container right">
+                  <div class="timeline-heading">
+                    <h4>August 2015 - February 2016</h4>
+                    <h4 class="timeline-subheading">INTERNSHIP IN PRODUCT MANAGEMENT</h4>
+                  </div>
+                  <div class="timeline-content">
+                    <p> I was part of the online product management team of Tipico Co. Ltd. in Malta for 6 months. Not only did I improve my English skills, but was also in charge of CMS management, responsive e-mail development and supported the team in UX/UI projects.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-container left">
+                  <div class="timeline-heading">
+                    <h4>October 2011 - October 2013</h4>
+                    <h4 class="timeline-subheading">INTERNATIONAL MEDIA AND COMPUTING (B. SC.)</h4>
+                  </div>
+                  <div class="timeline-content">
+                      <p> I successfully completed my bachelor's studies <i>International Media and Computing (Internationale Medieninformatik)</i> at Hochschule für Wirtschaft und Technik (HTW) with an overall grade with 1.9 and a grade of 1.0 for my bachelor thesis.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> 
+        
+    </div>
+    </section>
+   
+
+<!-- Contact Section -->
+<section id="contactsection">
+                <div class="container">
+                 <div class="row">
+            <div class="col-lg-12 col-xs-12 text-center">
+                <h2 class="p-5">Contact</h2>
+            </div>
+        </div>
+                     
+                               
+              <div class="row centerVertAndHor">
+                  <div class="innerContent col-md-6 col-xs-8"><div data-packed="false" class="txtNew" style="pointer-events: none; top: 260px;" ><p class="font_7 text-center" >I’m always looking forward to meet new people and work on interesting projects. Send me an email at<span class="contact-text">
+<span class="contact-color text-center" style="background-color: rgba(0, 0, 255, 0.4); font-size:20px; font-weight: bold;"><a class="auto-generated-link" data-auto-recognition="true" data-content="info@website.com" href="mailto:bussertn@googlemail.com" data-type="mail"> bussertn@googlemail.com </a></span></span> and lets grab coffee or meet virtually.</p></div>                  
+                            
+                            
+         
+                    
+                    
+                    
+                            
+                    
+        </div>
+        
+        </section>    
+                
+     
+<!-- end tag for extra space for fancy navi -->                   
+</div>
+        
+
+
+        
+<!-- Footer -->
+<footer class="text-center app-footer">
+            <div class="footer-above">
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                     <ul class="social footer-social">
+    <li><a href="https:///www.linkedin.com/no-jo-bu"><i class="fab fa-linkedin fa-2x" style="color: white;"></i></a></li>
+    <li><a href="https://www.instagram.com/nojobu/"><i class="fab fa-instagram fa-2x" style="color: white;"></i></a></li>
+    <li><a href="https://dribbble.com/nojobu"><i class="fab fa-dribbble fa-2x" style="color: white;"></i></a></li>
+         <li><a href="https://vimeo.com/nojobu"><i class="fab fa-vimeo fa-2x" style="color: white;"></i></a></li>
+</ul>
+       
+              </div>     
+                    <!--<div class="footer-col col-md-4">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedIn.com/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw "></i></a>
+                            </li>
+                            <li>
+                                <a href="https://dribble.com/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/nojobu" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                
+                <div class="footer-below">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer-container">
+                                Copyright © Nora Bussert 2019
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div></footer>
+
+      
+       
+        
+         
+
+
+
+       
+        
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/classie.js"></script>
+        <script src="js/cbpAnimatedHeader.js"></script>
+
+       
+</body>
+</html>
