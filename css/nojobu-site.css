@@ -235,8 +235,6 @@ outline-color: rgb(0, 0, 0);
 }
 
 .extra-space{
-    margin-top: 60px;
-    padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -420,6 +418,14 @@ margin-left: auto;
 @media (max-width: 899px) {
     .nav-container{
         display: none;
+    }
+    
+    .extra-space{
+       
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    
     }
 }
 
@@ -658,14 +664,22 @@ style.css:494 @only screen and (min-width:890px)
     text-align: left;
   }
     
-
+@media only screen and (max-width:480px){
+       .toggle-menu.main-toggle-menu {
+        position: relative;
+    }
+}
 
     
     
  .contact-color{
      background-color: rgba(0, 0, 255, 0.5);
      font-size:30px; 
-     font-weight: bold; 
+     @media only screen and (max-width:480px){
+        .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+        position: relative;
+    }
+}
     }  
     
     .contact-text{
@@ -723,6 +737,11 @@ style.css:494 @only screen and (min-width:890px)
         
     }
     
+    
+    section .blue-boarder{
+        border: 2px solid blue !important;
+        width: inherit !important;
+    }
    
  
 } 
