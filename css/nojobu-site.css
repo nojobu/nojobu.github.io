@@ -102,12 +102,6 @@ outline-color: rgb(0, 0, 0);
 }
 
 
-.neu-center-center{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-}
 
 .center-bottom{
     position: fixed;
@@ -116,23 +110,7 @@ outline-color: rgb(0, 0, 0);
     transform: translate(-50%, -50%);
 }
 
-.center-top{
-    position: fixed;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%, -50%);
-}
 
-.center-middle-left{
-    position: fixed;
-    top: 44%;
-}
-
-.center-middle-right{
-    position: fixed;
-    left: 90%;
-    top: 45%;
-}
 
 
 .style-text-input {
@@ -234,9 +212,10 @@ outline-color: rgb(0, 0, 0);
     font-family:lulo-clean-w01-one-bold,sans-serif;
 }
 
-.extra-space{
+.extra-space {
     padding-left: 60px;
     padding-right: 60px;
+    overflow-x: hidden;
 }
 
 
@@ -728,6 +707,10 @@ style.css:494 @only screen and (min-width:890px)
         font-size: 60px;
         font-weight: 800;
     }
+    
+    .footer-social{
+        font-size: 80%;
+    }
 }
 
 
@@ -744,9 +727,36 @@ style.css:494 @only screen and (min-width:890px)
 
 @media only screen and (max-width:370px){
 .respnsive-370{
-    padding-left: 40px;
+    padding-left: 30px;
+}
+    .footer-social{
+        padding: 1px;
+        min-width: 100px;
+    }
 }
 
+
+@media screen and ( max-height: 1024px ) and ( width: 768px ){
+     #startpage-text{
+        top: 30% !important;
+        right:2% !important;
+    }
+}
+
+@media screen and ( height: 1366px ) and ( width: 1024px ) {
+   
+    
+    .center-bottom{
+        top: 50vh;
+    }
+
+    #about {
+        top: 25vh;
+    }
+
+    #contact {
+         top: 25vh;
+    }  
 }
 
 
@@ -804,7 +814,6 @@ style.css:494 @only screen and (min-width:890px)
     }
 
      .pf-click:hover{
-         
         color: #B72C2C;
         border-bottom: 2px solid;
         border-bottom: 4px solid #B72C2C !important;  
@@ -822,13 +831,13 @@ style.css:494 @only screen and (min-width:890px)
         margin-right: auto;
         border: 0;
         display: block;
-         padding-top: 20px;
+        padding-top: 20px;
     }
     
      .next-prev-buttons{
         margin-top: 10px;
         padding-top: 20px;
-    }
+        }
     
     .font-buttons{
         font-family: "gt_america_extended_regular", sans-serif;
