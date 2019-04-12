@@ -219,7 +219,9 @@ outline-color: rgb(0, 0, 0);
 }
 
 
-
+.section-end-line {
+    border-bottom: 1px solid black;
+}
 
 #about {
     top: 50vh;
@@ -736,7 +738,7 @@ style.css:494 @only screen and (min-width:890px)
 }
 
 
-@media screen and ( max-height: 1024px ) and ( width: 768px ){
+@media screen and ( max-height: 1024px ) and ( width: 7px ){
      #startpage-text{
         top: 30% !important;
         right:2% !important;
@@ -793,6 +795,8 @@ style.css:494 @only screen and (min-width:890px)
     border: 4px solid blue !important;
     padding-left: 4px;
     padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
  
     .portfolio-list {
