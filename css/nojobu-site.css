@@ -224,7 +224,7 @@ outline-color: rgb(0, 0, 0);
 }
 
 .section-top-line {
-    border-top: 1px solid black;
+    border-top: 0px solid black;
 }
 
 
@@ -345,7 +345,6 @@ margin-left: auto;
 /* Toggel NAV POINT */
 .toggle{
     position: fixed;
-    top: 10px;
     right:20px;
     width: 45px;
     height: 45px;
@@ -369,12 +368,12 @@ margin-left: auto;
 
 #hamburger button {
     padding: 0 !important;
-    margin: 15px;
+    margin: 10px;
 }
 
 
 .hamburger {
-    padding: 15px 15px;
+    padding: 10px 10px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -390,77 +389,6 @@ margin-left: auto;
 }
 
 
-.hamburger-box {
-    width: 40px;
-    height: 24px;
-    display: inline-block;
-    position: relative;
-}
-
-.toggle .hamburger-inner {
-    top: auto;
-    bottom: 0;
-    transition-duration: 0.13s;
-    transition-delay: 0.13s;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
-    background-color: #000;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-}
-.hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px;
-}
-
-.toggle .hamburger-inner::after {
-    top: -20px;
-    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
-}
-
-.hamburger-inner::after {
-    bottom: -10px;
-}
-
-.hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block;
-}
-
-.toggle .hamburger-inner {
-    top: auto;
-    bottom: 0;
-    transition-duration: 0.13s;
-    transition-delay: 0.13s;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 2px;
-    background-color: #000;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-}
-
-
-
-
-
-
-
-
-
 
 
 /*#olD*/
@@ -470,10 +398,9 @@ margin-left: auto;
     display: block;
     position: relative;
     margin: auto;
-    width: 60%;
+    width: 80%;
     height: 30%;
-    color: white;
-    top: 14px;
+    color: black;
 }
 
 .line-layer {
@@ -673,6 +600,7 @@ style.css:494 @only screen and (min-width:890px)
     margin-top: 60px;
     margin-bottom:60px;
 }
+
 .timeline {
   position: relative;
   padding: 0;
@@ -687,7 +615,7 @@ style.css:494 @only screen and (min-width:890px)
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #004ffc;
+  background-color: blue;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -710,7 +638,7 @@ style.css:494 @only screen and (min-width:890px)
   height: 20px;
   right: -10px;
   background-color: white;
-  border: 4px solid #004ffc;
+  border: 4px solid blue;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -789,6 +717,11 @@ style.css:494 @only screen and (min-width:890px)
         font-weight: 900;
         border: 6px solid blue;
     }
+    
+    .section-top-line {
+    border-top: 1px solid black;
+}
+
 }
     
 @media screen and (max-width: 780px) {
@@ -829,6 +762,11 @@ style.css:494 @only screen and (min-width:890px)
     .footer-social{
         font-size: 80%;
     }
+    
+    .section-top-line {
+    border-top: 1px solid black;
+}
+
 }
 
 
@@ -838,6 +776,10 @@ style.css:494 @only screen and (min-width:890px)
         .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
         position: relative;
     }
+    .section-top-line {
+    border-top: 1px solid black;
+}
+
 }
    
 
@@ -851,6 +793,10 @@ style.css:494 @only screen and (min-width:890px)
         padding: 1px;
         min-width: 100px;
     }
+    .section-top-line {
+    border-top: 1px solid black;
+}
+
 }
 
 
@@ -859,6 +805,11 @@ style.css:494 @only screen and (min-width:890px)
         top: 30% !important;
         right:2% !important;
     }
+    
+    .section-top-line {
+    border-top: 1px solid black;
+}
+
 }
 
 @media screen and ( height: 1366px ) and ( width: 1024px ) {
@@ -875,6 +826,11 @@ style.css:494 @only screen and (min-width:890px)
     #contact {
          top: 25vh;
     }  
+    
+    .section-top-line {
+    border-top: 1px solid black;
+}
+
 }
 
 
@@ -895,14 +851,14 @@ style.css:494 @only screen and (min-width:890px)
     color: blue;
     font-size: 40px; 
     font-weight:bold;
-     border: 6px solid blue !important;
-     padding: 1px;
+    border: 6px solid blue !important;
+    padding: 1px;
 }
 
     
-     a#contact-color:hover{
+a#contact-color:hover{
     color: #B72C2C;
-     border: 6px solid #B72C2C!important;
+    border: 6px solid #B72C2C!important;
 }    
 
    /*PORTFOLIO UX*/
@@ -929,7 +885,8 @@ style.css:494 @only screen and (min-width:890px)
     }
     
     .pf-click{
-        border-bottom: 4px solid blue !important;               color:blue;
+        border-bottom: 4px solid blue !important;               
+        color:blue;
         font-weight: bold;
     }
 
