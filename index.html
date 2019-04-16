@@ -43,13 +43,13 @@
 
     
      <!-- Responsive Toggle Navigation BURGER -->  
-<div class="toggle" id="js-navbar-toggle">
+<button class="toggle" id="js-navbar-toggle" type="button">
      <span class="lines">
       <span class="line-layer"></span>
       <span class="line-layer"></span>
       <span class="line-layer"></span>
     </span>
-</div>
+</button>
     
     <div class="toggle-menu" id="js-toggle-menu">
     <ul class="main-toggle-menu">
@@ -70,11 +70,40 @@
      
     
 <!-- NAVIGATIONs --> 
+    
+    <script>
+	
+	var btn = document.getElementById("js-navbar-toggle").querySelector("button");
+	var overlay = document.getElementById("js-toggle-menu");
+	
+	btn.addEventListener("click", function(){
+		if (btn.classList.contains('is-active')){
+			btn.classList.remove('is-active');
+			overlay.classList.remove('is-active');			
+		} else {
+			btn.classList.add('is-active');
+			overlay.classList.add('is-active');				
+		}
+	});
+	
+	
+	$(window).scroll(function(){
+		btn.classList.remove('is-active');
+			overlay.classList.remove('is-active');	
+		
+		});
+	
+	
+</script>
+    
   <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> </script>
     <script src="js/toggle.js"> </script>
+    
+    
+    
     
     <!--<script type="text/javascript">
             let mainNav = document.getElementById('js-toggle-menu');
@@ -193,18 +222,17 @@
              
                         
 <!-- Portfolio Section -->           
-<section class="success section-end-line" id="portfoliosection">
+<section class="success section-end-line section-top-line" id="portfoliosection">
    
     <h1 class="my-4 p-3">PORTFOLIO</h1>
     
     <div class="container">
         <div class="row">
             <div class="col-lg-6 portfolio-item">
-                  
-              <a href="html/pf-Eatly.html" target="_self"> Test                           
-                            </a>  
-              <a href="html/pf-Eatly.html" target="_self">  <h3 class="m-2 pb-3"> <span class="blue-box mb-3">1</span> UX/UI Projects</h3>                            
-                            </a>  
+                
+              <a href="html/pf-Eatly.html" target="_self">  
+                  <h3 class="m-2 pb-3"> <span class="blue-box mb-3">1</span> UX/UI Projects</h3>                            
+                </a>  
             
             <p class="m-2 pt-3"> Here are my projects I worked on so far: </p>
             <br>
@@ -264,7 +292,7 @@
            
                
         </div>
-    </div>
+        </div>
         </div>
     </section>
         
