@@ -447,6 +447,15 @@ margin-left: auto;
 }
 
 @media (max-width: 899px) {
+    .nav-container .nav-item:nth-child(1){
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-container .nav-item:nth-child(1) .navbar-fixed{
+        margin: 10px;
+    }
+    
     .nav-container .nav-item:nth-child(2){
         display: none;
     }

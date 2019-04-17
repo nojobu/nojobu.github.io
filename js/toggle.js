@@ -18,7 +18,12 @@ mainNav.addEventListener('click', function () {
 }); 
         
         
+  
+    $('.toggle-menu .main-toggle-menu > a:not(a[href="#"])').on('click', function() {
+    self.location = $(this).attr('href');
         
+});
+    
 });
 
 
