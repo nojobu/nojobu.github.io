@@ -734,8 +734,8 @@ style.css:494 @only screen and (min-width:890px)
     }
     
     .section-top-line {
-    border-top: 1px solid black;
-}
+    border-top: 4px solid black;
+    }
 
 }
     
