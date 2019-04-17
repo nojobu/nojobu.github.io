@@ -17,8 +17,6 @@ mainNav.addEventListener('click', function () {
     navBarToggle.classList.toggle('toggle-active');
 }); 
         
-        
-  
     $('.toggle-menu .main-toggle-menu > a:not(a[href="#"])').on('click', function() {
     self.location = $(this).attr('href');
         
