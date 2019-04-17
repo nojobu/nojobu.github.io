@@ -16,10 +16,14 @@
 }
 
 #logo-top{
-   
+   z-index: 90;
     margin: 15px;
     
 }
+
+.logo-responsive{
+        display: none;
+    }
 
 footer{
     background-color: black;
@@ -220,11 +224,11 @@ outline-color: rgb(0, 0, 0);
 
 
 .section-end-line {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .section-top-line {
-    border-top: 0px solid black;
+    border-top: 2px solid black;
 }
 
 
@@ -354,7 +358,9 @@ margin-left: auto;
 }
 
 
-
+.nav-links-toggle{
+    z-index: 99;
+}
 
 /*HAMBURGER*/
     
@@ -698,6 +704,10 @@ style.css:494 @only screen and (min-width:890px)
 
 
 @media screen and (max-width: 600px) {
+    .logo-responsive{
+        display: block;
+    }
+    
 /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -734,12 +744,15 @@ style.css:494 @only screen and (min-width:890px)
     }
     
     .section-top-line {
-    border-top: 4px solid black;
+    border-top: 2px solid black;
     }
 
 }
     
 @media screen and (max-width: 780px) {
+    .logo-responsive{
+        display: block;
+    }
     
  a#contact-color{
         font-size: 20px !important;
@@ -747,7 +760,9 @@ style.css:494 @only screen and (min-width:890px)
 }
 
 @media only screen and (max-width:480px){
-    
+    .logo-responsive{
+        display: block;
+    }
     .toggle-menu.main-toggle-menu {
         clear: both;
         position: relative;
@@ -779,7 +794,7 @@ style.css:494 @only screen and (min-width:890px)
     }
     
     .section-top-line {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
 
 }
@@ -788,11 +803,15 @@ style.css:494 @only screen and (min-width:890px)
 
 
 @media only screen and (max-width:480px){
+    
+    .logo-responsive{
+        display: block;
+    }
         .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
         position: relative;
     }
     .section-top-line {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
 
 }
@@ -801,34 +820,47 @@ style.css:494 @only screen and (min-width:890px)
 
 
 @media only screen and (max-width:370px){
-.respnsive-370{
-    padding-left: 30px;
-}
+    .logo-responsive{
+        display: block;
+    }
+    
+    .respnsive-370{
+        padding-left: 30px;
+    }
+    
     .footer-social{
         padding: 1px;
         min-width: 100px;
     }
+    
     .section-top-line {
-    border-top: 1px solid black;
-}
+        border-top: 1px solid black;
+    }
 
 }
 
-
+/*Tablets*/
 @media screen and ( max-height: 1024px ) and ( width: 7px ){
-     #startpage-text{
+    .logo-responsive{
+        display: block;
+    }
+    
+    #startpage-text{
         top: 30% !important;
         right:2% !important;
     }
     
     .section-top-line {
-    border-top: 1px solid black;
-}
+        border-top: 1px solid black;
+    }
 
 }
 
 @media screen and ( height: 1366px ) and ( width: 1024px ) {
    
+    .logo-responsive{
+        display: block;
+    }
     
     .center-bottom{
         top: 50vh;
