@@ -17,12 +17,13 @@
 
 #logo-top{
    z-index: 90;
-    margin: 15px;
+    margin: 10px;
     
 }
 
 .logo-responsive{
         display: none;
+    padding-left: 15px;
     }
 
 footer{
