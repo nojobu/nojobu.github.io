@@ -30,6 +30,7 @@
  * s                   : save png
  */
 'use strict';
+var cnv;
 
 var x = 0;
 var y = 0;
@@ -42,15 +43,30 @@ var angleDistortion = 0.0;
 
 var counter = 0;
 
+
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
+
+
 function setup() {
 
-	var clientHeight = document.getElementById('topsection').clientHeight;
-	var clientWidth = document.getElementById('topsection').clientWidth;
+  
+    
+	//var clientHeight = document.getElementById('topsection').clientHeight;
+	//var clientWidth = document.getElementById('topsection').clientWidth;
 
-	var cnv = createCanvas(clientWidth, clientHeight);
+	//cnv = createCanvas(clientWidth, clientHeight);
+    cnv = createCanvas(windowWidth, windowHeight);
 	cnv.parent("topsection");
+	
+    centerCanvas();
+    
+  //createCanvas(displayWidth, displayHeight); cnv.parent("page-top");
   background(255);
-//cursor('https://s3.amazonaws.com/mupublicdata/cursor.cur');
+  cursor(CROSS);
 
   x = mouseX;
   y = mouseY;
@@ -103,8 +119,5 @@ function keyPressed() {
 }
 
 function windowResized() {
-    var clientHeight = document.getElementById('topsection').clientHeight;
-    var clientWidth = document.getElementById('topsection').clientWidth;
-
-    resizeCanvas(clientWidth, clientHeight);
+  centerCanvas();
 }
