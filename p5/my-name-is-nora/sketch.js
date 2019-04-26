@@ -44,13 +44,16 @@ var counter = 0;
 
 function setup() {
 
+
 	var clientHeight = document.getElementById('topsection').clientHeight;
 	var clientWidth = document.getElementById('topsection').clientWidth;
 
 	var cnv = createCanvas(clientWidth, clientHeight);
 	cnv.parent("topsection");
+	
+  //createCanvas(displayWidth, displayHeight); cnv.parent("page-top");
   background(255);
-//cursor('https://s3.amazonaws.com/mupublicdata/cursor.cur');
+  cursor(CROSS);
 
   x = mouseX;
   y = mouseY;
@@ -100,11 +103,4 @@ function keyPressed() {
   // angleDistortion ctrls arrowkeys up/down
   if (keyCode == UP_ARROW) angleDistortion += 0.1;
   if (keyCode == DOWN_ARROW) angleDistortion -= 0.1;
-}
-
-function windowResized() {
-    var clientHeight = document.getElementById('topsection').clientHeight;
-    var clientWidth = document.getElementById('topsection').clientWidth;
-
-    resizeCanvas(clientWidth, clientHeight);
 }
