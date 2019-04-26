@@ -16,15 +16,10 @@
 }
 
 #logo-top{
-   z-index: 90;
-    margin: 10px;
-    
+    margin: auto;
+    margin-top: 50px;
+    max-width: 50%;
 }
-
-.logo-responsive{
-        display: none;
-    padding-left: 15px;
-    }
 
 footer{
     background-color: black;
@@ -225,11 +220,11 @@ outline-color: rgb(0, 0, 0);
 
 
 .section-end-line {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 
 .section-top-line {
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 }
 
 
@@ -350,64 +345,24 @@ margin-left: auto;
 /* Toggel NAV POINT */
 .toggle{
     position: fixed;
+    top: 10px;
     right:20px;
     width: 45px;
     height: 45px;
     border-radius: 30px;
+    background: #000;
     cursor: url("../imgs/curser-r-s.png"), default;
     z-index: 99;
 }
-
-
-.nav-links-toggle{
-    z-index: 99;
-}
-
-/*HAMBURGER*/
-    
-  #hamburger {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999999;
-    padding: 0;
-}
-
-#hamburger button {
-    padding: 0 !important;
-    margin: 10px;
-}
-
-
-.hamburger {
-    padding: 10px 10px;
-    display: inline-block;
-    cursor: url("../imgs/curser-r-s.png"), default;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible;
-}
-
-
-
-
-/*#olD*/
-
 
 .lines {
     display: block;
     position: relative;
     margin: auto;
-    width: 80%;
+    width: 60%;
     height: 30%;
-    color: black;
+    color: white;
+    top: 14px;
 }
 
 .line-layer {
@@ -454,21 +409,6 @@ margin-left: auto;
 }
 
 @media (max-width: 899px) {
-    .nav-container .nav-item:nth-child(1){
-        margin: 0;
-        padding: 0;
-    }
-    
-    .nav-container .nav-item:nth-child(1) .navbar-fixed{
-        margin: 10px;
-    }
-    
-    .nav-container .nav-item:nth-child(2){
-        display: none;
-    }
-    .nav-container .nav-item:nth-child(3){
-        display: none;
-    }
     .nav-container{
         display: none;
     }
@@ -622,7 +562,6 @@ style.css:494 @only screen and (min-width:890px)
     margin-top: 60px;
     margin-bottom:60px;
 }
-
 .timeline {
   position: relative;
   padding: 0;
@@ -637,7 +576,7 @@ style.css:494 @only screen and (min-width:890px)
   content: '';
   position: absolute;
   width: 6px;
-  background-color: blue;
+  background-color: #004ffc;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -660,7 +599,7 @@ style.css:494 @only screen and (min-width:890px)
   height: 20px;
   right: -10px;
   background-color: white;
-  border: 4px solid blue;
+  border: 4px solid #004ffc;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -705,10 +644,6 @@ style.css:494 @only screen and (min-width:890px)
 
 
 @media screen and (max-width: 600px) {
-    .logo-responsive{
-        display: block;
-    }
-    
 /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -743,17 +678,9 @@ style.css:494 @only screen and (min-width:890px)
         font-weight: 900;
         border: 6px solid blue;
     }
-    
-    .section-top-line {
-    border-top: 2px solid black;
-    }
-
 }
     
 @media screen and (max-width: 780px) {
-    .logo-responsive{
-        display: block;
-    }
     
  a#contact-color{
         font-size: 20px !important;
@@ -761,9 +688,7 @@ style.css:494 @only screen and (min-width:890px)
 }
 
 @media only screen and (max-width:480px){
-    .logo-responsive{
-        display: block;
-    }
+    
     .toggle-menu.main-toggle-menu {
         clear: both;
         position: relative;
@@ -793,75 +718,40 @@ style.css:494 @only screen and (min-width:890px)
     .footer-social{
         font-size: 80%;
     }
-    
-    .section-top-line {
-    border-top: 2px solid black;
-}
-
 }
 
 
 
 
 @media only screen and (max-width:480px){
-    
-    .logo-responsive{
-        display: block;
-    }
         .responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
         position: relative;
     }
-    .section-top-line {
-    border-top: 2px solid black;
-}
-
 }
    
 
 
 
 @media only screen and (max-width:370px){
-    .logo-responsive{
-        display: block;
-    }
-    
-    .respnsive-370{
-        padding-left: 30px;
-    }
-    
+.respnsive-370{
+    padding-left: 30px;
+}
     .footer-social{
         padding: 1px;
         min-width: 100px;
     }
-    
-    .section-top-line {
-        border-top: 1px solid black;
-    }
-
 }
 
-/*Tablets*/
+
 @media screen and ( max-height: 1024px ) and ( width: 7px ){
-    .logo-responsive{
-        display: block;
-    }
-    
-    #startpage-text{
+     #startpage-text{
         top: 30% !important;
         right:2% !important;
     }
-    
-    .section-top-line {
-        border-top: 1px solid black;
-    }
-
 }
 
 @media screen and ( height: 1366px ) and ( width: 1024px ) {
    
-    .logo-responsive{
-        display: block;
-    }
     
     .center-bottom{
         top: 50vh;
@@ -874,11 +764,6 @@ style.css:494 @only screen and (min-width:890px)
     #contact {
          top: 25vh;
     }  
-    
-    .section-top-line {
-    border-top: 1px solid black;
-}
-
 }
 
 
@@ -899,14 +784,14 @@ style.css:494 @only screen and (min-width:890px)
     color: blue;
     font-size: 40px; 
     font-weight:bold;
-    border: 6px solid blue !important;
-    padding: 1px;
+     border: 6px solid blue !important;
+     padding: 1px;
 }
 
     
-a#contact-color:hover{
+     a#contact-color:hover{
     color: #B72C2C;
-    border: 6px solid #B72C2C!important;
+     border: 6px solid #B72C2C!important;
 }    
 
    /*PORTFOLIO UX*/
@@ -933,8 +818,7 @@ a#contact-color:hover{
     }
     
     .pf-click{
-        border-bottom: 4px solid blue !important;               
-        color:blue;
+        border-bottom: 4px solid blue !important;               color:blue;
         font-weight: bold;
     }
 
@@ -992,3 +876,5 @@ a#contact-color:hover{
 } 
 
 
+    
+  

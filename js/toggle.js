@@ -17,11 +17,6 @@ mainNav.addEventListener('click', function () {
     navBarToggle.classList.toggle('toggle-active');
 }); 
         
-    $('.main-toggle-menu .main-toggle-menu-link> a.nav-links-toggle:not(a[href="#"])').on('click', function() {
-    self.location = $(this).attr('href');
+        
         
 });
-    
-});
-
-
