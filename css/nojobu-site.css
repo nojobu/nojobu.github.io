@@ -416,7 +416,28 @@ footer{
     transition: top 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955),transform 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955),width 150ms 75ms cubic-bezier(0.455, 0.03, 0.515, 0.955),-webkit-transform 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+.line-layer:nth-child(2) {
+    top: 8px;
+}
+.line-layer:nth-child(3) {
+    top: 16px;
+}
 
+.toggle-active .line-layer:nth-child(2) {
+    width: 0%;
+}
+
+.toggle-active .line-layer:nth-child(1) {
+    -webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);
+    top: 45%;
+}
+
+.toggle-active .line-layer:nth-child(3) {
+    -webkit-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+    top: 45%;
+}
 
 
 
@@ -485,6 +506,10 @@ li.main-toggle-menu-link {
     overflow: hidden;
 
 }
+
+
+
+
 
 /* ALL LINKS*/
 .toggle-menu ul li a{
