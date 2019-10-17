@@ -15,6 +15,11 @@
     <title>NoJoBu Portfolio</title>
     <meta name="description">
 
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+
+    
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <!--<link href="../css/bootstrap.min.css" rel="stylesheet">-->
 
@@ -73,22 +78,23 @@ border="0" width="30%" height="30%" alt="logo"/></a>
      <!-- Portfolio P% Graphics PART -->         
 <section class="success" id="portfolioMG">         
             <!-- Portfolio Section -->
-      <h1 class="my-4 pb-5">CREATIVE CODING GRAPHICS - PORTFOLIO
+      <h1 class="my-4 pb-5">CREATIVE CODING PORTFOLIO
       </h1>
                 
                 
                 
                 
-           <div class="row">
+        <div class="row">
         <div class="col-lg-6 portfolio-item">
-          <div class="card h-100 style-pf-txtbox">  
-            <div class="embed-responsive embed-responsive-16by9 style-pf-vidbox">
-                <iframe src="https://player.vimeo.com/video/328175316" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+          <div class="card h-100 style-pf-txtbox"> 
+            <!-- SKETCH -->
+     
+            <script src="../p5/crazy-flowers/sketch-crazy-flowers.js"></script>
+
+            <div class="embed-responsive embed-responsive-16by9 style-pf-vidbox" id="crazy-flowers-section"></div>
             <div class="card-body">
-              <h4 class="card-title">Advertisment Clip
-              </h4>
-              <p class="card-text style-pf-txt">Fake advertisment clip for an university project. The aim of this clip was to combine serveral techniques in one medium, such as 3D elements (lens animation) and 2D frequences with simple video footage.</p>
+              <h4 class="card-title">Sketch 1</h4>
+              <p class="card-text style-pf-txt">"Crazy Flowers" is using a flow field to display the random generated flowers.</p>
             </div>
           </div>
         </div>
