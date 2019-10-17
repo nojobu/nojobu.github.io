@@ -491,6 +491,7 @@ ul.main-toggle-menu{
     margin: 0;
     padding: 0;
     width: 100%;
+    z-index: 8;
 }
 
 
@@ -504,11 +505,8 @@ li.main-toggle-menu-link {
     justify-content: space-between;
     font-size: 3rem;
     overflow: hidden;
-
+    z-index: 9;
 }
-
-
-
 
 
 /* ALL LINKS*/
@@ -523,7 +521,7 @@ li.main-toggle-menu-link {
     font-family:lulo-clean-w01-one-bold,sans-serif;
     color: #B72C2C;
     background-color: #FFD56B;
-    z-index: 99;
+    z-index: 10;
 }
 
 .toggle-menu ul li a:hover{
@@ -532,6 +530,10 @@ li.main-toggle-menu-link {
     color: blue;
     cursor: url("../imgs/curser-r-s.png"), default;
 }
+
+
+
+
 
 
 .social {
