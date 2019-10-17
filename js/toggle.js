@@ -3,7 +3,9 @@ $(document).ready(function(){
 $('.toggle').toggleClass('active')
 })*/
 
+/* Toggle Selection (navigation) */
 let mainNav = document.getElementById('js-toggle-menu');
+/* Humburger */
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
 
