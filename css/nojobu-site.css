@@ -527,8 +527,7 @@ li.main-toggle-menu-link {
     justify-content: space-between;
     font-size: 3rem;
     overflow: hidden;
-    color: #B72C2C;
-    background-color: #FFD56B;
+
 }
 
 /* ALL LINKS*/
@@ -541,6 +540,8 @@ li.main-toggle-menu-link {
     display: block;
     font-weight: 400;
     font-family:lulo-clean-w01-one-bold,sans-serif;
+    color: #B72C2C;
+    background-color: #FFD56B;
     
 }
 
