@@ -208,7 +208,7 @@ outline-color: rgb(0, 0, 0);
 /* Text */
 .style-pf-txt {
     font-size: 1rem;
-
+font-family: courier new,courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace, Arial,Helvetica,sans-serif;
 }
 
 /* Title */
@@ -526,7 +526,8 @@ li.main-toggle-menu-link {
     flex-direction: column;
     justify-content: space-between;
     font-size: 3rem;
-     overflow: hidden;
+    overflow: hidden;
+    z-index: 10;
 }
 
 /* ALL LINKS*/
