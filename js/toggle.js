@@ -9,12 +9,16 @@ let mainNav = document.getElementById('js-toggle-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
 
-navBarToggle.addEventListener('click touchstart', function () {
+navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+    navBarToggle.classList.toggle('toggle-active');
+});
+navBarToggle.addEventListener('touchstart', function () {
     mainNav.classList.toggle('active');
     navBarToggle.classList.toggle('toggle-active');
 });
 
-mainNav.addEventListener('click touchstart', function () {
+mainNav.addEventListener('click', function () {
     mainNav.classList.toggle('active');
     navBarToggle.classList.toggle('toggle-active');
 }); 
