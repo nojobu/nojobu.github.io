@@ -17,12 +17,6 @@
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <!--<link href="../css/bootstrap.min.css" rel="stylesheet">-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> </script>
-    <script src="js/toggle.js"> </script>
-    <script src="js/testtoggle.js"> </script>
      <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    
@@ -31,9 +25,6 @@
     <link href="css/freelancer.css" rel="stylesheet" media="screen">
     <link href="css/nojobu-site.css" rel="stylesheet" type="text/css">
 
-
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
    <!-- Custom Fonts -->
   <link href="fontawesome-free-5.8.1-web/css/all.css" rel="stylesheet">
@@ -56,25 +47,34 @@
 <img src="imgs/NoJoBu-logo.png" onmouseover="this.src='imgs/NoJoBu-logo_black.png'" onmouseout="this.src='imgs/NoJoBu-logo.png'" alt="logo" width="98" height="36">
                 </span></a></div>
     
-    <!-- Top Navigation Menu -->
-<div class="topnav">
-    <a href="#home" class="active">Logo</a>
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="#topsection">News</a>
-      <a href="#contactsection">Contact</a>
-      <a href="#aboutsection">About</a>
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
-
-
     
-  
+     <!-- Responsive Toggle Navigation BURGER -->  
+<div id="hamburger">
+	<button class="hamburger toggle" id="js-navbar-toggle" type="button">
+	  <span class="lines">
+      <span class="line-layer"></span>
+      <span class="line-layer"></span>
+      <span class="line-layer"></span>
+    </span>
+	</button>
+</div>    
+    
+<div class="toggle-menu" id="js-toggle-menu">
+    <div id="myLinks">
+        <a href="#portfoliosection">News</a>
+        <a href="#contactsection">Contact</a>
+        <a href="#aboutsection">About</a>
+      </div>
+</div> 
+     
+    
+ 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> </script>
+    <script src="js/toggle.js"> </script>
     
     
     
