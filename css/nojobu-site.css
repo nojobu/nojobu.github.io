@@ -55,7 +55,7 @@ footer{
 
 /* Navi */
 .nav-container{
-      z-index: 999;  
+      z-index: 99;  
 }
 
 .nav-base{
@@ -84,7 +84,7 @@ outline-color: rgb(0, 0, 0);
 .sticky-navi{
     position: sticky;
     bottom: 10px;
-    z-index: 999;
+    z-index: 9;
 }
 
 .center-center {
@@ -359,10 +359,7 @@ margin-left: auto;
 }
 
 
-.nav-links-toggle{
-   
-    z-index: 99;
-}
+/*.nav-links-toggle{ z-index: 99;}*/
 
 /*HAMBURGER*/
     
@@ -370,7 +367,7 @@ margin-left: auto;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 999999;
+    z-index: 99;
     padding: 0;
 }
 
@@ -542,7 +539,7 @@ li.main-toggle-menu-link {
     font-family:lulo-clean-w01-one-bold,sans-serif;
     color: #B72C2C;
     background-color: #FFD56B;
-    
+    z-index: 999;
 }
 
 
