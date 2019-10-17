@@ -542,8 +542,8 @@ li.main-toggle-menu-link {
     z-index: 99;
 }
 
-
 .toggle-menu ul li a:hover{
+    transition: o.2s;
     transform: scaleX(1);
     color: blue;
     cursor: url("../imgs/curser-r-s.png"), default;
