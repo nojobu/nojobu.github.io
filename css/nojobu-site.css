@@ -360,8 +360,7 @@ margin-left: auto;
 
 
 .nav-links-toggle{
-    color: #B72C2C;
-    background-color: #FFD56B;
+   
     z-index: 99;
 }
 
@@ -496,7 +495,6 @@ margin-left: auto;
     bottom: 0;
     background: #fff;
     z-index: 6;
-    background: white;
     border: 2px solid;
     border-color: black;
     display: flex;
@@ -529,6 +527,8 @@ li.main-toggle-menu-link {
     justify-content: space-between;
     font-size: 3rem;
     overflow: hidden;
+    color: #B72C2C;
+    background-color: #FFD56B;
 }
 
 /* ALL LINKS*/
