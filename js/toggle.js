@@ -16,8 +16,10 @@ mainNav.addEventListener('click', function () {
     mainNav.classList.toggle('active');
     navBarToggle.classList.toggle('toggle-active');
 }); 
-        
-    $('.main-toggle-menu .main-toggle-menu-link> a.nav-links-toggle:not(a[href="#"])').on('click', function() {
+                                                              //a[href*="#"]:not([href="#"])
+   /* $('.main-toggle-menu .main-toggle-menu-link> a.nav-links-toggle:not(a[href="#"])').on('click', function() {
+    self.location = $(this).attr('href'); */
+    $('.main-toggle-menu .main-toggle-menu-link> a[href*="#"]:not([href="#"])').on('click', function() {
     self.location = $(this).attr('href');
         
 });
